@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "start": "npm run build && concurrently --names 'typescript,server' 'npx tsc --watch' 'nodemon -q dist/index.js'",
+    "format": "npx prettier -w ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,6 +19,7 @@
     "@types/node": "^18.7.16",
     "concurrently": "^7.4.0",
     "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.3"
   }
 }

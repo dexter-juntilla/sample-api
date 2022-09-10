@@ -1,9 +1,9 @@
-const express = require('express');
+import express, { Express, Request, Response } from 'express';
 
-const app = express();
+const app: Express = express();
 const port = 8080;
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World');
 });
 
